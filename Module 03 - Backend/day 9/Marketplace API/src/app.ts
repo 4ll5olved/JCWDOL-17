@@ -3,7 +3,7 @@ import express, { Application, NextFunction, Request, Response } from "express";
 import cors from "cors";
 import { PORT } from "./config";
 import { ErrorHandler } from "./helpers/response.handler";
-import { productRouter } from "./routers/product.controller";
+import { productRouter } from "./routers/product.router";
 import { authRouter } from "./routers/auth.router";
 export class App {
   private app: Application;

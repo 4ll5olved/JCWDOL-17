@@ -10,14 +10,14 @@ export class ErrorHandler extends Error {
   }
 }
 
-export const responseHandler = (
-  res: Response,
-  message: string,
-  data?: any,
-  code?: number
-) => {
-  return res.status(code || 200).send({
-    message,
-    data,
-  });
-};
+  export const responseHandler = (
+    res: Response,
+    message: string,
+    data?: any,
+    code?: number
+  ) => {
+    return res.status(code || 200).send({
+      message,
+      data,
+    });
+  };
